@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret+One:regular");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+:root {
+  --light-grey: #dad4c8;
+  --dark-brown: #292524;
+  --orange: #ecc576be;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg, var(--orange), var(--light-grey));
+  font-family: "Open Sans", sans-serif;
+  color: var(--dark-brown);
+}
+i {
+  font-size: 20px;
+  cursor: pointer;
+}
+header{
+    padding-top: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  border-top: 2px solid var(--dark-brown);
+  width: 80%;
+  margin: 0 auto;
+}
+.logo {
+  font-family: "Poiret One", sans-serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 25px;
+  cursor: pointer;
+}
+nav ul li:hover{
+    /* font-weight: bolder; */
+    text-decoration: underline;
+}
+nav ul li:last-child {
+  margin-left: 25px;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    padding: 0 60px;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.left-child{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    
+}
+.left-child button{
+    color: white;
+    background-color: var(--dark-brown);
+    padding: 15px 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.left-child p{
+    width: 50%;
+    text-align: left;
+}
+.left, .right{
+    width: 50vw;
+}
+.left h1{
+    font-family: 'Poiret One', sans-serif;
+    font-size: 65px;
+    width: 60%;
+    font-weight: 100;
+    margin-top: 40px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right img{
+    height: 550px;
+    border-bottom: 3px solid var(--dark-brown);
+}
